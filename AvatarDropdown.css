@@ -1,0 +1,51 @@
+/* AvatarDropdown.css */
+
+.avatar-container {
+    position: relative; /* Necessary for dropdown positioning */
+    display: inline-block;
+}
+
+.avatar {
+    cursor: pointer;
+}
+
+.avatar-image {
+    width: 40px; /* Set the size of the avatar */
+    height: 40px;
+    border-radius: 50%; /* Make it circular */
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f4f4f4; /* Highlight on hover */
+}
